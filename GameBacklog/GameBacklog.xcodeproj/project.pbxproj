@@ -6,6 +6,10 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		16AACEED2F82D1B4004C3733 /* GRDB in Frameworks */ = {isa = PBXBuildFile; productRef = 16AACED32F82CD39004C3733 /* GRDB */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXContainerItemProxy section */
 		16AACEB62F82CA45004C3733 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -52,6 +56,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				16AACEED2F82D1B4004C3733 /* GRDB in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -112,6 +117,7 @@
 			);
 			name = GameBacklog;
 			packageProductDependencies = (
+				16AACED32F82CD39004C3733 /* GRDB */,
 			);
 			productName = GameBacklog;
 			productReference = 16AACEA62F82CA43004C3733 /* GameBacklog.app */;
@@ -195,6 +201,9 @@
 			);
 			mainGroup = 16AACE9D2F82CA42004C3733;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				16AACED22F82CD39004C3733 /* XCRemoteSwiftPackageReference "GRDB" */,
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = 16AACEA72F82CA43004C3733 /* Products */;
 			projectDirPath = "";
@@ -573,6 +582,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		16AACED22F82CD39004C3733 /* XCRemoteSwiftPackageReference "GRDB" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/groue/GRDB.swift";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		16AACED32F82CD39004C3733 /* GRDB */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 16AACED22F82CD39004C3733 /* XCRemoteSwiftPackageReference "GRDB" */;
+			productName = GRDB;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 16AACE9E2F82CA43004C3733 /* Project object */;
 }
